@@ -1,0 +1,149 @@
+/* Background dan Font Global */
+body {
+    background: linear-gradient(to right, #74ebd5, #9face6);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Utama */
+.login-container {
+    margin: 100px auto;
+    max-width: 420px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Judul */
+.login-container-text {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Form */
+.login-container-form {
+    padding: 30px;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+/* Input dengan Icon di kiri */
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.input-group:focus-within {
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+.input-group .icon-left {
+    font-size: 20px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+    background: none;
+}
+
+/* Radio Role */
+.form-radio-field {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-radio-field > input {
+    display: none;
+}
+
+.form-radio-field > label {
+    padding: 10px 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-right: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: 500;
+}
+
+.form-radio-field > label:last-child {
+    border-right: 1px solid #ccc;
+}
+
+.form-radio-field input:checked + label {
+    background: #6c63ff;
+    color: white;
+    border-color: #6c63ff;
+}
+
+/* Tombol Login */
+.login-btn-container {
+    margin-top: 20px;
+}
+
+.login-btn {
+    display: block;
+    padding: 12px;
+    background-color: #6c63ff;
+    border-radius: 6px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: white;
+    color: #6c63ff;
+    border: 2px solid #6c63ff;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .login-container {
+        margin: 80px 20px;
+    }
+
+    .login-container-text::after {
+        content: " (Mobile)";
+        font-size: 14px;
+        color: #666;
+    }
+}
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

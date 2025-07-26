@@ -1,0 +1,17 @@
+.alert {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.alert-primary {
+    background-color: #5869c9;
+    border: 1px solid #2f46c9;
+    color: #ede9f3;
+}
+
+.alert-normal {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
