@@ -22,3 +22,7 @@ DB_PASSWORD=password_database
 "php artisan migrate"
 ### 8. Jalankan server lokal Laravel:
 "php artisan serve"
+
+///untuk login admin
+username:admin123
+password:admin
